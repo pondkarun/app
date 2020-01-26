@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp" lang="en">
+
+<head>
+    <title>app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="script/angular-material/angular-material.css" rel="stylesheet">
+    <link href="script/loadingTopJS/loadingTopJS.css" rel="stylesheet">
+    <link href="script/angular-colorpicker/css/color-picker.min.css" rel="stylesheet" />
+    <link href="script/kendo-ui/kendo.common-material.css" rel="stylesheet">
+    <link href="script/kendo-ui/kendo.material.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="script/font-awesome/css/font-awesome.min.css">
+    <link href="style/main.css" rel="stylesheet">
+
+</head>
+
+<body class="app sidebar-mini rtl" ng-controller="appController">
+
+    <header class="app-header"><a class="app-header__logo" href="index.php">ADMIN</a>
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+        <ul class="app-nav">
+
+            <!-- User Menu-->
+            <li class="dropdown">
+                <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu">
+                    <i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;<b></b>
+                </a>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user fa-lg"></i> ข้อมูลส่วนตัว</a></li>
+                    <li><a class="dropdown-item" href="password.php"><i class="fa fa-user fa-key"></i> เปลี่ยนรหัสผ่าน</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+
+
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+
+        <ul class="app-menu">
+            <li>
+                <a class="app-menu__item active" href="articles.php?active=articles">
+                    <i class="app-menu__icon fa fa-star"></i>
+                    <span class="app-menu__label">จัดการบทความ</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        <article ng-view></article>
+    </main>
+
+    <!--Map Libraries-->
+    <script src="script/js/jquery-3.2.1.min.js"></script>
+    <script src="script/js/popper.min.js"></script>
+    <script src="script/js/bootstrap.min.js"></script>
+    <script src="script/js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="script/js/plugins/pace.min.js"></script>
+    <script src="script/js/sweetalert/sweetalert.min.js"></script>
+    <script src="script/angular/angular.js"></script>
+    <script src="script/angular/angular-animate.js"></script>
+    <script src="script/angular/angular-aria.js"></script>
+    <script src="script/angular-material/angular-material.min.js"></script>
+    <script src="script/angular/angular-cookies.js"></script>
+    <script src="script/angular/angular-loader.js"></script>
+    <script src="script/angular/angular-route.js"></script>
+    <script src="script/angular/angular-messages.js"></script>
+    <script src="script/angular/angular-sanitize.js"></script>
+    <script src="script/loadingTopJS/loadingTopJS.min.js"></script>
+    <script src="script/v-accordion.js"></script>
+    <script src="script/kendo-ui/kendo.all.js"></script>
+    <script src="script/kendo-ui/cultures/kendo.culture.th-TH.js"></script>
+    <script src="script/kendo-ui/cultures/kendo.culture.th.js"></script>
+
+    <script src="script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="script/moment.min.js"></script>
+    <script src="script/svg-assets-cache.js"></script>
+    <script src="script/underscore-min.js"></script>
+    <script src="script/ngInfiniteScroll.js"></script>
+    <script src="script/angular-colorpicker/js/color-picker.min.js"></script>
+
+
+    <!-- Load app main script -->
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Load services -->
+    <script src="service/appMenuService.js"></script>
+
+    <!-- Load Controller-->
+
+
+    <!-- Load directive -->
+    <script src="directive/demo/demoTest/demoTestController.js"></script>
+    <script src="directive/shared/gridMaster/gridMaster.js"></script>
+    <script src="directive/shared/gridMaster/gridPrivilege.js"></script>
+    <script src="directive/shared/gridMaster/gridUserGroup.js"></script>
+    <script src="directive/shared/gridMaster/gridSelection.js"></script>
+    <script src="directive/shared/gridMaster/gridSearch.js"></script>
+
+
+</body>
+
+</html>
